@@ -9,7 +9,7 @@ struct node {
 typedef struct node node;
 
 node *
-sll_create(void)
+sll_init(void)
 {
 	node *head = malloc(sizeof(node));
 
