@@ -5,5 +5,5 @@ All the data structures implemented stores only int type.
 
 Building libds
 --------------
+run 
 make
-
