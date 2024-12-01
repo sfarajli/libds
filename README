@@ -1,0 +1,9 @@
+libds - commonly used data structures
+=====================================
+libds is a simple implementation of commonly used data structures.
+All the data structures implemented stores only int type.
+
+Building libds
+--------------
+make
+
