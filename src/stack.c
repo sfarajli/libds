@@ -9,18 +9,6 @@ struct node {
 
 typedef struct node node;
 
-void
-stack_free(node *head)
-{
-	if (head == NULL)
-		return;
-
-	if (head->next != NULL)
-		stack_free(head->next);
-
-	free(head);
-}
-
 node *
 stack_init(void)
 {
