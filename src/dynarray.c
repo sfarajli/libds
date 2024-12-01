@@ -1,11 +1,7 @@
 #include <stdlib.h>
 #include <sys/types.h>
 
-typedef struct {
-	size_t capacity;
-	size_t used;
-	int * arr;
-} arrent;
+#include "../libds.h"
 
 int
 arr_init(arrent *arr)

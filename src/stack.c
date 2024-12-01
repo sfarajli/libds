@@ -2,12 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct node {
-	int value;
-	struct node *next;
-};
-
-typedef struct node node;
+#include "../libds.h"
 
 node *
 stack_init(void)
