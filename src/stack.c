@@ -16,7 +16,6 @@ stack_init(void)
 	return head;
 }
 
-
 int
 stack_push(node **head, int value)
 {
