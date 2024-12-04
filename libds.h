@@ -9,12 +9,10 @@ typedef struct {
 	int * arr;
 } arrent;
 
-struct node {
+typedef struct node {
 	int value;
 	struct node *next;
-};
-
-typedef struct node node;
+} node;
 
 /* dynamic array */
 int arr_init(arrent *arr);
@@ -23,7 +21,7 @@ int arr_push(arrent *arr, int value);
 int arr_pop(arrent *arr, int *value);
 
 /* linked list */
-node * sll_init(void);
+node *sll_init(void);
 void sll_free(node *head);
 int sll_pushfront(struct node *head, int value);
 int sll_pushback(struct node *head, int value);
@@ -35,7 +33,8 @@ int sll_length(node *head);
 void sll_print(struct node *head);
 
 /* stack */
-node * stack_init(void);
+node *stack_init(void);
+void stack_free(node *);
 int stack_push(node **head, int value);
 int stack_pop(node **head);
 void stack_print(struct node *head);
