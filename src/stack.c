@@ -11,6 +11,18 @@ stack_init(void)
 	return head;
 }
 
+void
+stack_free(node *head)
+{
+	if (head == NULL)
+		return;
+
+	if (head->next != NULL)
+		stack_free(head->next);
+
+	free(head);
+}
+
 int
 stack_push(node **head, int value)
 {
@@ -35,6 +47,7 @@ stack_pop(node **head)
 	free(tmp);
 	return result;
 }
+
 void
 stack_print(struct node *head)
 {
